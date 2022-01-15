@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    @include('layouts.partials.head')
+    @include('layouts.partials.head', ['title' => $page_title])
 </head>
 <body>
 

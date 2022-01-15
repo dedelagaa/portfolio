@@ -15,6 +15,9 @@
 
             <div class="col-md-4 text-center">
 
+                <div class="footer-logo margin-top-40 margin-bottom-40">
+                    <a href="{{ url('/') }}"><img src="{{ asset('assets/img/logo/my.png') }}" title="Home" alt="logo"></a>
+                </div>
 
             </div> <!-- /.col -->
 

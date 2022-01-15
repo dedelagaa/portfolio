@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\View;
 use App\Http\Controllers\Home\MainController;
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,20 @@ Route::get('/', function () {
     return view('home.v1');
 });
 
-Route::prefix('home')->group(function() {
-    Route::get('/', [MainController::class. 'index']);
+Route::get('/about', function () {
+    return view('home.v1.about');
 });
+
+Route::get('/contact', function () {
+    return view('home.v1.contact');
+});
+
+Route::get('/portfolio', function () {
+    return view('home.v1.portfolio');
+});
+
+
+// 404 for undefined routes
+Route::any('/{page?}', function () {
+    return View::make('404');
+})->where('page', '.*');

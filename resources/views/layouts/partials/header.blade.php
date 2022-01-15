@@ -1,5 +1,9 @@
 <div id="header">
 
+    <div id="logo">
+        <a href="{{ url('/') }}"><img src="{{ asset('assets/img/logo/my.png')}}" title="Home" alt="logo"></a>
+    </div>
+
     <nav id="menu" class="menu slide-right-half bg-image" style="background-image: url(assets/img/misc/header.jpg); background-position: 50% 50%">
 
         <!-- Element cover -->
@@ -24,9 +28,7 @@
                         <li class="has-children">
                             <a href="#0" class="sub-menu-trigger">About</a> 
                             <ul class="sub-menu">
-                                <li><a href="about-us.html">About Us</a></li>
-                                <li><a href="about-me.html">About Me</a></li>
-                                <li><a href="team.html">The Team</a></li>
+                                <li><a href="{{ url('about') }}">About Me</a></li>
                             </ul>
                         </li>
                         <li class="has-children">

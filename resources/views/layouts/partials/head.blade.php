@@ -1,5 +1,5 @@
 		<!-- Title -->
-		<title>Home - Dede</title>
+		<title>{{$title ?? ''}} - DLP</title>
 
 		<!-- Meta -->
 		<meta charset="utf-8">
@@ -11,9 +11,10 @@
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- Favicon (http://www.favicon-generator.org/) -->
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<meta property="og:image:width" content="348" />
+		<meta property="og:image:height" content="225" />
+		<!-- App favicon -->
+		<link rel="shortcut icon" href="{{ asset('assets/img/logo/my.png') }}">
 
 		<!-- Google font (https://www.google.com/fonts) -->
 		<link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic' rel='stylesheet' type='text/css'> <!-- Body font (Ubuntu Mono) -->

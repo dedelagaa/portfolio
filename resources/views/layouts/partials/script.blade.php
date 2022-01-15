@@ -14,3 +14,5 @@
 
 <!-- Theme master JS -->
 <script src="{{ asset('assets/js/theme.js') }}"></script>
+
+@yield('script')
